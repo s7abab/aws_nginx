@@ -6,21 +6,32 @@ Create free AWS Account at https://aws.amazon.com/
 ## 2. Create and Lauch an EC2 instance and SSH into machine
 I would be creating a t2.medium ubuntu machine for this demo.
 
-## 3. Install Node and NPM
+## 3. Install Nvm (Node version manager to install npm and node latest versions)
 ```
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+source ~/.bashrc
+
+nvm --version
+
+## 4. Install latest version of node js and npm
+
+nvm install --lts
+
+nvm use --lts
 
 node --version
 ```
 
-## 4. Clone your project from Github
+## 5. Clone your project from Github
 ```
-git clone https://github.com/piyushgargdev-01/short-url-nodejs
+git clone https://github.com/shabab.git  ## clone your git hub repo
 ```
 
-## 5. Install dependencies and test app
+## 6. Install dependencies and test app
 ```
+
+## 7. Install pm2 (pm2 is a process manager for node js apps)
 sudo npm i pm2 -g
 pm2 start index
 
@@ -50,6 +61,8 @@ sudo ufw allow https (Port 443)
 sudo apt install nginx
 
 sudo nano /etc/nginx/sites-available/default
+## If you are changing the default file name to your custom file name then u need to link that file with sites-enabled. Otherways skip the next command
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/ 
 ```
 Add the following to the location part of the server block
 ```

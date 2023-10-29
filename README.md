@@ -28,7 +28,8 @@ node --version
 git clone https://github.com/shabab.git  ## clone your git hub repo
 ```
 
-## 6. Install dependencies and test app
+## 6. Install dependencies and test app 
+npm install
 ```
 ```
 ## 7. Install pm2 (pm2 is a process manager for node js apps)

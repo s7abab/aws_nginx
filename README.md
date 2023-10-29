@@ -30,8 +30,9 @@ git clone https://github.com/shabab.git  ## clone your git hub repo
 
 ## 6. Install dependencies and test app
 ```
-
+```
 ## 7. Install pm2 (pm2 is a process manager for node js apps)
+```
 sudo npm i pm2 -g
 pm2 start index
 
@@ -47,7 +48,7 @@ pm2 flush (Clear logs)
 pm2 startup ubuntu
 ```
 
-## 6. Setup Firewall
+## 8. Setup Firewall
 ```
 sudo ufw enable
 sudo ufw status
@@ -56,7 +57,7 @@ sudo ufw allow http (Port 80)
 sudo ufw allow https (Port 443)
 ```
 
-## 7. Install NGINX and configure
+## 9. Install NGINX and configure
 ```
 sudo apt install nginx
 
@@ -85,7 +86,7 @@ sudo nginx -t
 sudo nginx -s reload
 ```
 
-## 8. Add SSL with LetsEncrypt
+## 10. Add SSL with LetsEncrypt
 ```
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update

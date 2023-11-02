@@ -91,7 +91,7 @@ sudo nginx -t
 # Restart NGINX
 sudo nginx -s reload
 ```
-
+```
 ## 10. Add SSL with LetsEncrypt
 ```
 sudo add-apt-repository ppa:certbot/certbot
